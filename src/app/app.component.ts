@@ -10,8 +10,8 @@ import { RouterOutlet } from '@angular/router';
       <header class="brand-name">
         <img
           class="brand-logo"
-          src="/assets/logo.svg"
-          alt="logo"
+          src="./assets/logo.svg"
+          alt="notFound"
           aria-hidden="true"
         />
       </header>
