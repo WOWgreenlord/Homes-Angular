@@ -14,7 +14,7 @@ import { HousingLocation } from '../housing-location';
         alt="Exterior photo of {{ housingLocation.name }}"
       />
       <h2 class="listing-heading">{{ housingLocation.name }}</h2>
-      <p class="listing-locationng">
+      <p class="listing-location">
         {{ housingLocation.city }}, {{ housingLocation.state }}
       </p>
     </section>
