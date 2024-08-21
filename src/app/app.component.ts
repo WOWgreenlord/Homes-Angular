@@ -2,23 +2,26 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HomeComponent, CommonModule],
+  imports: [RouterOutlet, HomeComponent, CommonModule, RouterModule],
   template: `
     <main>
-      <header class="brand-name">
-        <img
-          class="brand-logo"
-          src="./assets/logo.svg"
-          alt="notFound"
-          aria-hidden="true"
-        />
-      </header>
+      <a [routerLink]="['/']">
+        <header class="brand-name">
+          <img
+            class="brand-logo"
+            src="./assets/logo.svg"
+            alt="notFound"
+            aria-hidden="true"
+          />
+        </header>
+      </a>
       <section class="conetnt">
-        <app-home></app-home>
+        <router-outlet></router-outlet>
       </section>
     </main>
   `,
