@@ -4,11 +4,12 @@ import { RouterOutlet } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatMenuComponent } from "./mat-menu/mat-menu.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HomeComponent, CommonModule, RouterModule, MatSlideToggleModule],
+  imports: [RouterOutlet, HomeComponent, CommonModule, RouterModule, MatSlideToggleModule, MatMenuComponent],
   template: `
     <main>
       <a [routerLink]="['/']">
@@ -19,6 +20,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
             alt="notFound"
             aria-hidden="true"
           />
+        <app-mat-menu></app-mat-menu>
         </header>
       </a>
       <section class="conetnt">
