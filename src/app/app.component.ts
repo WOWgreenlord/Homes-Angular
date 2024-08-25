@@ -3,11 +3,12 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HomeComponent, CommonModule, RouterModule],
+  imports: [RouterOutlet, HomeComponent, CommonModule, RouterModule, MatSlideToggleModule],
   template: `
     <main>
       <a [routerLink]="['/']">
